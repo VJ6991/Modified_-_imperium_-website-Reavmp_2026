@@ -43,15 +43,11 @@
                 "a": "Yes — AI assists agents in real time during live interactions, surfacing relevant information while a call or chat is in progress, and every call, chat or ticket is logged automatically rather than requiring manual entry afterward. Imperium layers this AI assistance on top of existing telephony infrastructure rather than requiring a full platform replacement."
             },
             {
-                "q": "How much does Imperium's contact center software cost?",
-                "a": "Imperium doesn't publish fixed pricing — as an enterprise CTI and contact center platform, cost depends on factors like number of agents, on-premise vs. cloud deployment, and which modules (CTI, IVR, predictive dialing, reporting) you need. Contact Imperium's sales team for a quote scoped to your setup."
-            },
-            {
                 "q": "Is Imperium's contact center platform secure?",
                 "a": "Security is built around authorized, CRM-connected access rather than open records — agents only see caller and customer data through the authenticated system, not paper files or shared spreadsheets — and for regulated sectors like banking, Imperium's cloud infrastructure uses region-based data hosting rather than routing data outside the region. Specific certifications and compliance requirements vary by industry and jurisdiction — confirm current requirements for your sector directly with Imperium's team."
             }
         ],
-        "last_updated": "2026-08-16"
+        "last_updated": "2026-08-17"
     },
 
     "industry-influence": {
