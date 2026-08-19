@@ -409,8 +409,11 @@
             }
 
             /* Problem → solution beat (bento grid).
-               Each Challenge point is struck through as the matching Imperium Approach
-               capability lands, so the motion says "problem, then fix".
+               Each Challenge point strikes through only once the user has scrolled past both
+               the Challenge and Approach cards (triggered by a sentinel at the section's
+               bottom, not the cards entering view) — so it reads as "you've seen the problem
+               and the fix, here's the resolution" rather than firing the moment the section
+               appears.
                The sweep lives on a JS-inserted span wrapping only the label text — a
                line-through on the <li> would also strike the red × icon, and text-decoration
                inherited from an ancestor cannot be cancelled on a child. */
@@ -487,10 +490,6 @@
             <div class="flex items-center gap-6 lg:gap-10">
             <div class="flex items-center gap-2 mt-1"><a href="/"><img width="264" height="84" alt="Imperium Software Technologies" class="h-9 sm:h-10 w-auto"
                     src="images/imperium-logo-orange-new.png" /></a></div>
-            <nav class="hidden md:flex items-center space-x-5 lg:space-x-6">
-                <a class="text-stone-300 hover:text-white transition-colors text-sm font-medium" href="/industry-influence">Verticals</a>
-                <a class="text-stone-300 hover:text-white transition-colors text-sm font-medium" href="/casestudy">Case Studies</a>
-            </nav>
             </div>
             <div class="flex items-center gap-3">
 
@@ -516,8 +515,6 @@
         <div id="mobile-menu"
             class="md:hidden hidden overflow-y-auto max-h-[calc(100vh-72px)] border-t border-white/10 bg-stone-950/95 backdrop-blur-3xl">
             <nav class="flex flex-col px-5 py-4 gap-1 max-w-7xl mx-auto">
-                <a class="mobile-nav-link text-stone-300 hover:text-white hover:bg-white/5 transition-colors text-base font-medium py-3 px-2 rounded-lg border-b border-white/5" href="/industry-influence">Verticals</a>
-                <a class="mobile-nav-link text-stone-300 hover:text-white hover:bg-white/5 transition-colors text-base font-medium py-3 px-2 rounded-lg border-b border-white/5" href="/casestudy">Case Studies</a>
                 <!-- CTA for widths below sm, where the bar button is hidden -->
                 <a class="mobile-nav-link sm:hidden mt-3 flex items-center justify-center bg-gradient-to-b from-[#ff8555] to-[#ff5215] border border-orange-400/50 text-white font-bold text-base py-3 px-4 rounded-lg" href="/contact">Talk to an Expert</a>
             </nav>
@@ -1013,6 +1010,10 @@
                     </div>
                 </div>
             </div>
+            <!-- Sentinel: strike animation waits for this to reach the viewport, i.e. until
+                 the user has scrolled down past both the Challenge and Approach cards, not
+                 just scrolled the section into view. See the strike-text JS below. -->
+            <div id="challenge-approach-end" aria-hidden="true"></div>
         </section>
 
         <!-- End-to-end Services Section -->
@@ -1153,8 +1154,8 @@
                 <!-- Product 1 -->
                 <div
                     class="group relative bg-surface-container-low rounded-[2.5rem] p-4 border border-outline-variant/10 hover:border-white/20 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 overflow-hidden cursor-pointer"
-                    onclick="window.location.href='/contact'" role="link" tabindex="0" aria-label="Contact us"
-                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.location.href='/contact';}">
+                    onclick="window.open('https://iconnectcx.com/','_blank','noopener')" role="link" tabindex="0" aria-label="Visit iConnect CX (opens in a new tab)"
+                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('https://iconnectcx.com/','_blank','noopener');}">
                     <div
                         class="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/[0.01] to-transparent -translate-x-[150%] group-hover:translate-x-[50%] transition-transform duration-[1200ms] -skew-x-[20deg] ease-out pointer-events-none z-20">
                     </div>
@@ -1200,8 +1201,8 @@
                 <!-- Product 2 -->
                 <div
                     class="group relative bg-surface-container-low rounded-[2.5rem] p-4 border border-outline-variant/10 hover:border-white/20 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 overflow-hidden cursor-pointer"
-                    onclick="window.location.href='/contact'" role="link" tabindex="0" aria-label="Contact us"
-                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.location.href='/contact';}">
+                    onclick="window.open('https://inaipiapp.com/','_blank','noopener')" role="link" tabindex="0" aria-label="Visit Inaipi CCaaS (opens in a new tab)"
+                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('https://inaipiapp.com/','_blank','noopener');}">
                     <div
                         class="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/[0.01] to-transparent -translate-x-[150%] group-hover:translate-x-[50%] transition-transform duration-[1200ms] -skew-x-[20deg] ease-out pointer-events-none z-20">
                     </div>
@@ -1252,8 +1253,8 @@
                 <!-- Product 3 -->
                 <div
                     class="group relative bg-surface-container-low rounded-[2.5rem] p-4 border border-outline-variant/10 hover:border-white/20 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 overflow-hidden cursor-pointer"
-                    onclick="window.location.href='/contact'" role="link" tabindex="0" aria-label="Contact us"
-                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.location.href='/contact';}">
+                    onclick="window.open('https://listeniqapp.com/','_blank','noopener')" role="link" tabindex="0" aria-label="Visit Listen IQ (opens in a new tab)"
+                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.open('https://listeniqapp.com/','_blank','noopener');}">
                     <div
                         class="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/[0.01] to-transparent -translate-x-[150%] group-hover:translate-x-[50%] transition-transform duration-[1200ms] -skew-x-[20deg] ease-out pointer-events-none z-20">
                     </div>
@@ -2005,12 +2006,13 @@
             }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
             tagged.forEach(el => io.observe(el));
 
-            // 2b. Problem → solution beat: strike each Challenge point through as its matching
-            //     Approach capability lands (those arrive at 1000/1110/1220/1330ms; each strike
-            //     trails its card by ~400ms so the card reads first).
+            // 2b. Problem → solution beat: strike each Challenge point through only once the
+            //     user has scrolled down past both the Challenge and Approach cards (not just
+            //     scrolled the section into view) — the sentinel sits at the bottom of the
+            //     section, so it only reaches the viewport after both cards have been read.
             const points = document.querySelectorAll('.md\\:col-span-5 ul > li');
-            const approachCard = document.querySelector('.md\\:col-span-7');
-            if (points.length && approachCard) {
+            const strikeSentinel = document.getElementById('challenge-approach-end');
+            if (points.length && strikeSentinel) {
                 // The label is a bare text node sitting next to the × icon span, so wrap it —
                 // see the .strike-text comment in the stylesheet for why the line can't just
                 // go on the <li>.
@@ -2032,11 +2034,11 @@
                         if (!entry.isIntersecting) return;
                         obs.unobserve(entry.target);
                         targets.forEach((sp, i) => {
-                            setTimeout(() => sp.classList.add('struck'), 1400 + i * 110);
+                            setTimeout(() => sp.classList.add('struck'), i * 110);
                         });
                     });
-                }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-                strike.observe(approachCard);
+                }, { threshold: 0, rootMargin: '0px 0px -15% 0px' });
+                strike.observe(strikeSentinel);
             }
 
             // 3. Count-up for the metrics section.

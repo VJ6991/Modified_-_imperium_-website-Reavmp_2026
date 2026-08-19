@@ -267,12 +267,6 @@
                 <div class="flex items-center gap-2 mt-1"><a href="{{ url('') }}"><img
                             alt="Imperium Software Technologies" class="h-9 sm:h-10 w-auto"
                             src="{{ asset('image/imperium-logo-orange-new.png') }}" /></a></div>
-                <nav class="hidden md:flex items-center space-x-5 lg:space-x-6">
-                    <a class="text-stone-300 hover:text-white transition-colors text-sm font-medium"
-                        href="{{ url('industry-influence') }}">Verticals</a>
-                    <a class="text-stone-300 hover:text-white transition-colors text-sm font-medium"
-                        href="{{ url('casestudy') }}">Case Studies</a>
-                </nav>
             </div>
             <div class="flex items-center gap-3">
                 {{-- Same CTA as the homepage bar. On this page it jumps to the form
@@ -295,10 +289,6 @@
 
         <div id="mobile-menu" class="md:hidden hidden border-t border-white/10 bg-ink">
             <nav class="flex flex-col px-5 py-4 gap-1 max-w-7xl mx-auto">
-                <a class="text-stone-300 hover:text-white hover:bg-white/5 transition-colors text-base font-medium py-3 px-2 rounded-lg border-b border-white/5"
-                    href="{{ url('industry-influence') }}">Verticals</a>
-                <a class="text-stone-300 hover:text-white hover:bg-white/5 transition-colors text-base font-medium py-3 px-2 rounded-lg border-b border-white/5"
-                    href="{{ url('casestudy') }}">Case Studies</a>
                 {{-- CTA for widths below sm, where the bar button is hidden --}}
                 <a class="sm:hidden mt-3 flex items-center justify-center bg-gradient-to-b from-[#ff8555] to-[#ff5215] border border-orange-400/50 text-white font-bold text-base py-3 px-4 rounded-lg"
                     href="#enquiry">Talk to an Expert</a>

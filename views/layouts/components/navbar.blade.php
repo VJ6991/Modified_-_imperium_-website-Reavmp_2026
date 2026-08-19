@@ -15,16 +15,6 @@
   }
   .imp-nav__logo { display: flex; align-items: center; margin-top: 4px; }
   .imp-nav__logo img { height: 40px; width: auto; display: block; cursor: pointer; }
-  .imp-nav__links {
-    display: flex; align-items: center; gap: 24px;
-    list-style: none; margin: 0; padding: 0;
-  }
-  .imp-nav__links li { margin: 0; padding: 0; }
-  .imp-nav__links a {
-    color: #d6d3d1; font-size: 14px; font-weight: 500; line-height: 1;
-    font-family: 'Satoshi', sans-serif; transition: color .2s ease; white-space: nowrap;
-  }
-  .imp-nav__links a:hover { color: #fff; }
   /* Primary CTA — replicates the homepage "Talk to an Expert" button. */
   .imp-nav__cta {
     margin-left: auto;
@@ -47,8 +37,8 @@
   .imp-nav__mobile { display: none; }
 
   @media (max-width: 640px) {
-    /* collapse inline nav into the dropdown */
-    .imp-nav__links, .imp-nav__cta { display: none; }
+    /* collapse inline CTA into the dropdown */
+    .imp-nav__cta { display: none; }
     .imp-nav__inner { padding: 12px 16px; gap: 12px; }
     .imp-nav__logo img { height: 34px; }
 
@@ -95,10 +85,6 @@
     <a class="imp-nav__logo" href="{{ url('') }}">
       <img src="{{ asset('image/imperium-logo-orange-new.png') }}" alt="Imperium Software Technologies" />
     </a>
-    <ul class="imp-nav__links">
-      <li><a href="{{ url('industry-influence') }}">Verticals</a></li>
-      <li><a href="{{ url('casestudy') }}">Case Studies</a></li>
-    </ul>
     <a class="imp-nav__cta" href="{{ url('contact') }}">Talk to an Expert</a>
     <button class="imp-nav__burger" id="impNavBurger" type="button"
             aria-label="Toggle navigation menu" aria-controls="impNavMenu" aria-expanded="false">
@@ -113,8 +99,6 @@
     </button>
   </div>
   <div class="imp-nav__mobile" id="impNavMenu">
-    <a href="{{ url('industry-influence') }}">Verticals</a>
-    <a href="{{ url('casestudy') }}">Case Studies</a>
     <a class="imp-nav__cta-mobile" href="{{ url('contact') }}">Talk to an Expert</a>
   </div>
 </header>
