@@ -118,7 +118,7 @@ gtag('config', 'UA-212453304-1');
          Selectors are prefixed .imp-support-* to stay clear of Bootstrap. -->
     <style>
         .imp-support { position: relative; background: #0e0e0e; padding: 72px 20px; overflow: hidden; }
-        .imp-support::before { content: ''; position: absolute; top: -96px; left: -128px; width: 520px; max-width: 100%; height: 320px; background: rgba(255,107,53,.10); filter: blur(130px); border-radius: 9999px; pointer-events: none; }
+        .imp-support::before { content: ''; position: absolute; top: -96px; left: -128px; width: 520px; max-width: 100%; height: 320px; background: rgba(255,107,53,.045); filter: blur(130px); border-radius: 9999px; pointer-events: none; }
         .imp-support-inner { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 44px; align-items: start; }
         .imp-support h2 { font-family: 'Satoshi', sans-serif; font-weight: 700; color: #fff; font-size: 30px; line-height: 1.1; letter-spacing: -.02em; margin: 0; }
         .imp-support .imp-support-sub { margin: 20px 0 0; color: #D1D5DB; font-size: 16px; line-height: 1.65; max-width: 28rem; }
@@ -126,16 +126,60 @@ gtag('config', 'UA-212453304-1');
         .imp-support .imp-support-dot { width: 8px; height: 8px; border-radius: 50%; background: #34D399; display: inline-block; flex: 0 0 auto; }
         .imp-support .imp-support-brk { display: none; }
         .imp-support-rows { border-top: 1px solid rgba(255,255,255,.1); }
-        .imp-support-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.1); text-decoration: none; transition: border-color .25s ease; }
+        .imp-support-row { display: flex; align-items: center; gap: 20px; padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.1); text-decoration: none; transition: border-color .25s ease; }
         .imp-support-row:hover, .imp-support-row:focus { border-bottom-color: rgba(255,107,53,.4); text-decoration: none; }
+        /* Icon chip -- same treatment as the contact/home pages' version of this band. A
+           masked gradient-ring border was tried here and dropped: on a 44px circle it
+           produced visible seams where the two mask layers didn't quite anti-alias
+           together, reading as a jagged, artificial edge. A plain solid border renders as
+           a clean circle in every browser. */
+        .imp-support-row .imp-support-icon {
+            flex: 0 0 auto; width: 44px; height: 44px; border-radius: 9999px;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(255,255,255,.12);
+            color: #ff8555; font-size: 17px;
+            transition: color .3s ease, background .3s ease, border-color .3s ease;
+        }
+        .imp-support-row:hover .imp-support-icon, .imp-support-row:focus .imp-support-icon {
+            color: #ff6b35;
+            background: rgba(255,255,255,.06);
+            border-color: rgba(255,107,53,.4);
+        }
+        .imp-support-row .imp-support-body { flex: 1 1 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; min-width: 0; }
         .imp-support-row .imp-support-t { display: block; color: #fff; font-weight: 700; font-size: 18px; }
         .imp-support-row .imp-support-d { display: block; color: #D1D5DB; font-size: 14px; margin-top: 4px; }
         .imp-support-row .imp-support-r { flex: 0 0 auto; text-align: right; }
-        .imp-support-row .imp-support-a { display: block; color: #ff6b35; font-weight: 600; font-size: 14px; word-break: break-all; }
+        .imp-support-row .imp-support-a { display: block; color: #ff8555; font-weight: 500; font-size: 14px; word-break: break-all; }
         .imp-support-row .imp-support-m { display: block; color: #D1D5DB; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; margin-top: 4px; }
         @media (min-width: 640px) { .imp-support h2 { font-size: 36px; } .imp-support .imp-support-brk { display: block; } }
         @media (min-width: 1024px) { .imp-support { padding: 104px 32px; } .imp-support h2 { font-size: 42px; } .imp-support-inner { grid-template-columns: 0.9fr 1.1fr; gap: 72px; } }
-        @media (max-width: 560px) { .imp-support-row { flex-direction: column; align-items: flex-start; gap: 6px; } .imp-support-row .imp-support-r { text-align: left; } }
+        @media (max-width: 560px) { .imp-support-row .imp-support-body { flex-direction: column; align-items: flex-start; gap: 6px; } .imp-support-row .imp-support-r { text-align: left; } }
+        /* Office cards further down this layout (Head Office / Singapore / Chennai /
+           Bengaluru), kept plain on purpose: a flat single-tone card and a thin static
+           border. A gradient surface + icon-chip + hover-glow was tried here and pulled
+           back -- it read as the same decorative formula stamped on another block of
+           contact info, not a considered treatment of what these actually are: an
+           address and two lines of contact details. */
+        .subscription-area .address {
+            background: rgba(255,255,255,.035);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .subscription-area .address-heading { flex: 0 0 100%; font-weight: 600; letter-spacing: -.01em; }
+        /* Flex row instead of the plain float flow -- floats size each card to its own
+           content, so Head Office (extra address line + extra contact line) ends up
+           taller than the other three. Flex's default stretch matches every card in the
+           row to the tallest one automatically. Scoped narrowly since .col-md-12 is a
+           generic Bootstrap class reused across the site. */
+        .subscription-area .row .col-md-12 { display: flex; flex-wrap: wrap; align-items: stretch; }
+        .subscription-area .address h5 { font-size: 12px; font-weight: 600; margin: 0; min-height: 32px; padding: 0 0 10px; text-transform: uppercase; white-space: nowrap; color: rgba(255,255,255,.85); }
+        .subscription-area .address h5 i { margin-right: 6px; color: rgba(255,255,255,.4); }
+        .subscription-area .address p { color: rgba(255,255,255,.6); }
+        .subscription-area .address p i { color: rgba(255,255,255,.35); }
+        .subscription-area .address a { color: rgba(255,255,255,.6); }
+        .subscription-area .address a:hover { color: #ff8555; }
     </style>
     <section class="imp-support">
         <div class="imp-support-inner">
@@ -146,33 +190,42 @@ gtag('config', 'UA-212453304-1');
             </div>
             <div class="imp-support-rows">
                 <a class="imp-support-row" href="mailto:support@imperiumapp.com">
-                    <span>
-                        <span class="imp-support-t">Technical support</span>
-                        <span class="imp-support-d">Already running Imperium? Raise an issue any hour.</span>
-                    </span>
-                    <span class="imp-support-r">
-                        <span class="imp-support-a">support@imperiumapp.com</span>
-                        <span class="imp-support-m">24 / 7</span>
+                    <span class="imp-support-icon"><i class="fa fa-life-ring" aria-hidden="true"></i></span>
+                    <span class="imp-support-body">
+                        <span>
+                            <span class="imp-support-t">Technical support</span>
+                            <span class="imp-support-d">Already running Imperium? Raise an issue any hour.</span>
+                        </span>
+                        <span class="imp-support-r">
+                            <span class="imp-support-a">support@imperiumapp.com</span>
+                            <span class="imp-support-m">24 / 7</span>
+                        </span>
                     </span>
                 </a>
                 <a class="imp-support-row" href="mailto:sales@imperiumapp.com">
-                    <span>
-                        <span class="imp-support-t">Sales &amp; new projects</span>
-                        <span class="imp-support-d">Pricing, demos and scoping a new deployment.</span>
-                    </span>
-                    <span class="imp-support-r">
-                        <span class="imp-support-a">sales@imperiumapp.com</span>
-                        <span class="imp-support-m">Replies in 1 day</span>
+                    <span class="imp-support-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+                    <span class="imp-support-body">
+                        <span>
+                            <span class="imp-support-t">Sales &amp; new projects</span>
+                            <span class="imp-support-d">Pricing, demos and scoping a new deployment.</span>
+                        </span>
+                        <span class="imp-support-r">
+                            <span class="imp-support-a">sales@imperiumapp.com</span>
+                            <span class="imp-support-m">Replies in 1 day</span>
+                        </span>
                     </span>
                 </a>
                 <a class="imp-support-row" href="tel:+97142443417">
-                    <span>
-                        <span class="imp-support-t">Speak to someone</span>
-                        <span class="imp-support-d">Straight through to the Dubai head office.</span>
-                    </span>
-                    <span class="imp-support-r">
-                        <span class="imp-support-a">+971 4 244 3417</span>
-                        <span class="imp-support-m">Head office</span>
+                    <span class="imp-support-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="imp-support-body">
+                        <span>
+                            <span class="imp-support-t">Prefer to talk?</span>
+                            <span class="imp-support-d">Straight through to the Dubai head office.</span>
+                        </span>
+                        <span class="imp-support-r">
+                            <span class="imp-support-a">+971 4 244 3417</span>
+                            <span class="imp-support-m">Head office</span>
+                        </span>
                     </span>
                 </a>
             </div>
@@ -198,7 +251,7 @@ gtag('config', 'UA-212453304-1');
                         <h5> <i class="fa fa-building-o" aria-hidden="true"></i> Head Office </h5>
 
                         <p>
-                         1504, 1 Lake Plaza,<br/> Cluster T, Jumeirah Lakes Towers,<br/> P.O.Box: 73916, Dubai, UAE</p>
+                         Unit 211, Al Reyami Building,<br/> Karama, Dubai, UAE<br/> Landmark: Near Karama Post Office</p>
                         <p>
                             <i class="fa fa-mobile" aria-hidden="true"></i> : +97142443417<br>
                             <i class="fa fa-fax sm" aria-hidden="true"></i> : +97142443419<br>
@@ -314,11 +367,12 @@ gtag('config', 'UA-212453304-1');
                 <a href="{{ url('casestudy') }}">Case Studies</a>
             </nav>
             <ul class="lite-foot-social">
+                <li><a href="https://www.linkedin.com/company/imperium-software-technologies/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" style="width:12px;height:12px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a></li>
+                <li><a href="https://wa.me/97142443417" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.44-1.42a9.87 9.87 0 0 0 4.6 1.17h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.39 1.32-1.93 1.4-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.38-.24.63-.15.25.1 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.7-.17 1.38z"/></svg></a></li>
+                <li><a href="https://www.instagram.com/imperiumsoftware/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" style="width:12px;height:12px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a></li>
                 <li><a href="https://www.facebook.com/imperiumapp" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1V10H8v3h2.6v8h2.9z"/></svg></a></li>
                 <li><a href="https://twitter.com/imperiumapp" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M17.5 3h3l-6.6 7.6L21.7 21h-6.1l-4.3-5.6L6.3 21H3.3l7-8.1L2.6 3h6.2l3.9 5.1L17.5 3zm-1.1 16h1.7L7.7 4.8H5.9L16.4 19z"/></svg></a></li>
-                <li><a href="https://www.instagram.com/imperiumsoftware/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" style="width:12px;height:12px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a></li>
                 <li><a href="https://www.youtube.com/@imperiumsoftwaretechnologi9361" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M23 12s0-3.2-.4-4.7c-.2-.9-.9-1.5-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4c-.8.2-1.5.8-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.9.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4c.8-.2 1.5-.8 1.7-1.7.4-1.5.4-4.7.4-4.7zM9.8 15.3V8.7l6.2 3.3-6.2 3.3z"/></svg></a></li>
-                <li><a href="https://www.linkedin.com/company/imperium-software-technologies/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" style="width:12px;height:12px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a></li>
             </ul>
         </div>
     </footer>

@@ -15,21 +15,24 @@
   }
   .imp-nav__logo { display: flex; align-items: center; margin-top: 4px; }
   .imp-nav__logo img { height: 40px; width: auto; display: block; cursor: pointer; }
-  /* Primary CTA — replicates the homepage "Talk to an Expert" button. */
+  /* Primary CTA — replicates the homepage "Talk to an Expert" button. The glow was
+     toned down (was 0.6/0.8 alpha with an 18-24px blur -- enough to bloom visibly around
+     the button) and the hover brightness-filter flash was dropped for a plain lift, so
+     it reads as a considered button rather than a neon one. */
   .imp-nav__cta {
     margin-left: auto;
     display: inline-flex; align-items: center; justify-content: center;
     background: linear-gradient(180deg, #ff8555, #ff5215);
-    border: 1px solid rgba(251, 146, 60, 0.5);
-    box-shadow: inset 0 1px 1px rgba(255,255,255,0.6), 0 8px 18px -6px rgba(255,107,53,0.6);
+    border: 1px solid rgba(251, 146, 60, 0.3);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.5), 0 4px 12px -6px rgba(255,107,53,0.35);
     color: #fff !important; font-weight: 700; font-size: 14px; line-height: 20px;
     font-family: 'Satoshi', sans-serif; white-space: nowrap;
     padding: 8px 16px; border-radius: 4px;
-    transition: filter .3s ease, box-shadow .3s ease;
+    transition: box-shadow .3s ease, transform .3s ease;
   }
   .imp-nav__cta:hover {
-    filter: brightness(1.1);
-    box-shadow: inset 0 1px 2px rgba(255,255,255,0.8), 0 12px 24px -6px rgba(255,107,53,0.8);
+    transform: translateY(-1px);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.6), 0 6px 16px -6px rgba(255,107,53,0.5);
   }
 
   /* Hamburger button + mobile dropdown — hidden on desktop. */
@@ -72,8 +75,8 @@
       margin-top: 14px; border-bottom: none;
       display: flex; align-items: center; justify-content: center;
       background: linear-gradient(180deg, #ff8555, #ff5215);
-      border: 1px solid rgba(251, 146, 60, 0.5);
-      box-shadow: inset 0 1px 1px rgba(255,255,255,0.55);
+      border: 1px solid rgba(251, 146, 60, 0.3);
+      box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
       color: #fff !important; font-weight: 700; font-size: 15px; line-height: 20px;
       padding: 13px 16px; border-radius: 4px;
     }

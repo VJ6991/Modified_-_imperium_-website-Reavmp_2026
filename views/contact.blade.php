@@ -273,7 +273,7 @@
                      rather than reloading /contact. The phone number it replaced is
                      still shown in the rail card and the footer. --}}
                 <a href="#enquiry"
-                    class="relative hidden sm:inline-flex items-center justify-center bg-gradient-to-b from-[#ff8555] to-[#ff5215] border border-orange-400/50 shadow-[inset_0_1px_1px_rgba(255,255,255,0.6),0_8px_18px_-6px_rgba(255,107,53,0.6)] hover:shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_12px_24px_-6px_rgba(255,107,53,0.8)] hover:brightness-110 text-white font-bold text-sm px-4 py-2 rounded-lg transition-all duration-300 overflow-hidden group">
+                    class="relative hidden sm:inline-flex items-center justify-center bg-gradient-to-b from-[#ff8555] to-[#ff5215] border border-orange-400/30 shadow-[inset_0_1px_1px_rgba(255,255,255,0.5),0_4px_12px_-6px_rgba(255,107,53,0.35)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.6),0_6px_16px_-6px_rgba(255,107,53,0.5)] hover:-translate-y-0.5 text-white font-bold text-sm px-4 py-2 rounded-lg transition-all duration-300 overflow-hidden group">
                     <div
                         class="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-[150%] group-hover:translate-x-[50%] transition-transform duration-[1200ms] -skew-x-[20deg] ease-out pointer-events-none z-20">
                     </div>
@@ -290,7 +290,7 @@
         <div id="mobile-menu" class="md:hidden hidden border-t border-white/10 bg-ink">
             <nav class="flex flex-col px-5 py-4 gap-1 max-w-7xl mx-auto">
                 {{-- CTA for widths below sm, where the bar button is hidden --}}
-                <a class="sm:hidden mt-3 flex items-center justify-center bg-gradient-to-b from-[#ff8555] to-[#ff5215] border border-orange-400/50 text-white font-bold text-base py-3 px-4 rounded-lg"
+                <a class="sm:hidden mt-3 flex items-center justify-center bg-gradient-to-b from-[#ff8555] to-[#ff5215] border border-orange-400/30 shadow-[inset_0_1px_1px_rgba(255,255,255,0.5)] text-white font-bold text-base py-3 px-4 rounded-lg"
                     href="#enquiry">Talk to an Expert</a>
             </nav>
         </div>
@@ -463,9 +463,9 @@
                     <div class="card-lift rounded-2xl p-6">
                         <h2 class="font-headline text-base font-bold">Head office</h2>
                         <address class="mt-3 not-italic text-sm leading-relaxed text-stone-500">
-                            1504, 1 Lake Plaza, Cluster T,<br>
-                            Jumeirah Lakes Towers,<br>
-                            P.O. Box 73916, Dubai, UAE
+                            Unit 211, Al Reyami Building,<br>
+                            Karama, Dubai, UAE<br>
+                            Landmark: Near Karama Post Office
                         </address>
                         <a href="#offices"
                             class="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-brand hover:gap-2.5 transition-all">
@@ -517,11 +517,11 @@
                                 class="px-2 py-0.5 rounded-full bg-brand text-[10px] font-bold uppercase tracking-wider text-white">HQ</span>
                         </div>
                         <address class="mt-3 not-italic text-sm leading-relaxed text-stone-500 flex-1">
-                            1504, 1 Lake Plaza, Cluster T,<br>Jumeirah Lakes Towers,<br>P.O. Box 73916, Dubai, UAE
+                            Unit 211, Al Reyami Building,<br>Karama, Dubai, UAE<br>Landmark: Near Karama Post Office
                         </address>
                         <div class="mt-5 pt-4 border-t border-stone-200 text-sm space-y-1">
                             <a class="block font-semibold hover:text-brand transition-colors" href="tel:+97142443417">+971 4 244 3417</a>
-                            <p class="text-stone-400 text-[13px]">Fax +971 4 244 3419</p>
+                            <a class="block text-stone-400 text-[13px] hover:text-brand transition-colors" href="tel:+97142443419">+971 4 244 3419</a>
                         </div>
                     </div>
 
@@ -568,8 +568,12 @@
         <section class="px-5 sm:px-8 pb-20">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-wrap gap-2 mb-5" id="mapTabs">
+                    {{-- Points at the actual "Imperium Software Technologies DMCC" Google
+                         Business Profile listing (near Karama Post Office, Dubai) rather
+                         than a raw street address, so the pin and info card match the
+                         real, already-indexed place: https://maps.app.goo.gl/f2WVLCSPUESRTFwh6 --}}
                     <button type="button" data-city="Dubai"
-                        data-q="1%20Lake%20Plaza%2C%20Cluster%20T%2C%20Jumeirah%20Lakes%20Towers%2C%20Dubai"
+                        data-q="Imperium%20Software%20Technologies%20DMCC%20-%20Cloud%20Communication%20Solution%2C%20Karama%2C%20Dubai"
                         class="map-tab is-active" style="cursor:pointer">Dubai</button>
                     {{-- Use a street address, not lat/long. A bare `q=<lat>,<lng>` pins
                          the right spot but Google then looks for a place entity at that
@@ -597,7 +601,7 @@
                     <iframe id="officeMap" class="map-frame w-full h-full" style="border:0" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" allowfullscreen
                         title="Imperium office location — Dubai"
-                        src="https://www.google.com/maps?q=1%20Lake%20Plaza%2C%20Cluster%20T%2C%20Jumeirah%20Lakes%20Towers%2C%20Dubai&z=16&output=embed"></iframe>
+                        src="https://www.google.com/maps?q=Imperium%20Software%20Technologies%20DMCC%20-%20Cloud%20Communication%20Solution%2C%20Karama%2C%20Dubai&z=16&output=embed"></iframe>
                 </div>
             </div>
         </section>
@@ -619,8 +623,28 @@
              tokens (surface-container-lowest / on-surface-variant / primary-container),
              so their values are inlined as arbitrary classes — #0e0e0e, #D1D5DB, #ff6b35.
              Copying the homepage markup verbatim renders unstyled here. -->
+        <style>
+            /* Icon chip for the support band. A masked gradient-ring border was tried here
+               and dropped -- on a 44px circle it produced visible seams where the two mask
+               layers didn't quite anti-alias together, reading as a jagged, artificial
+               edge. A plain solid border renders as a clean circle in every browser. */
+            .imp-support-icon {
+                flex-shrink: 0; width: 44px; height: 44px; border-radius: 999px;
+                display: flex; align-items: center; justify-content: center;
+                background: rgba(255,255,255,.04);
+                border: 1px solid rgba(255,255,255,.12);
+                color: #ff8555;
+                transition: color .3s ease, background .3s ease, border-color .3s ease;
+            }
+            .imp-support-icon .material-symbols-outlined { font-size: 19px; }
+            .group:hover .imp-support-icon {
+                color: #ff6b35;
+                background: rgba(255,255,255,.06);
+                border-color: rgba(255,107,53,.4);
+            }
+        </style>
         <section class="relative py-20 sm:py-28 px-5 sm:px-8 bg-[#0e0e0e] overflow-hidden">
-            <div class="absolute -top-24 -left-32 w-[520px] max-w-full h-[320px] bg-[#ff6b35]/10 blur-[130px] rounded-full pointer-events-none"></div>
+            <div class="absolute -top-24 -left-32 w-[520px] max-w-full h-[320px] bg-[#ff6b35]/[0.045] blur-[130px] rounded-full pointer-events-none"></div>
             <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-12 lg:gap-20 items-start">
 
                 <div>
@@ -639,38 +663,53 @@
 
                 <div class="border-t border-white/10">
                     <a href="mailto:support@imperiumapp.com"
-                        class="group flex items-center justify-between gap-6 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
-                        <span class="min-w-0">
-                            <span class="block text-white font-bold text-lg">Technical support</span>
-                            <span class="block text-sm text-[#D1D5DB] mt-1">Already running Imperium? Raise an issue any hour.</span>
+                        class="group flex items-center gap-5 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
+                        <span class="imp-support-icon">
+                            <span class="material-symbols-outlined text-lg" data-icon="support_agent">support_agent</span>
                         </span>
-                        <span class="shrink-0 text-right">
-                            <span class="block text-[#ff6b35] font-semibold text-sm break-all">support@imperiumapp.com</span>
-                            <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">24 / 7</span>
+                        <span class="min-w-0 flex-1 flex items-center justify-between gap-6">
+                            <span class="min-w-0">
+                                <span class="block text-white font-bold text-lg">Technical support</span>
+                                <span class="block text-sm text-[#D1D5DB] mt-1">Already running Imperium? Raise an issue any hour.</span>
+                            </span>
+                            <span class="shrink-0 text-right">
+                                <span class="block text-[#ff8555] font-medium text-sm break-all">support@imperiumapp.com</span>
+                                <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">24 / 7</span>
+                            </span>
                         </span>
                     </a>
 
                     <a href="mailto:sales@imperiumapp.com"
-                        class="group flex items-center justify-between gap-6 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
-                        <span class="min-w-0">
-                            <span class="block text-white font-bold text-lg">Sales &amp; new projects</span>
-                            <span class="block text-sm text-[#D1D5DB] mt-1">Pricing, demos and scoping a new deployment.</span>
+                        class="group flex items-center gap-5 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
+                        <span class="imp-support-icon">
+                            <span class="material-symbols-outlined text-lg" data-icon="handshake">handshake</span>
                         </span>
-                        <span class="shrink-0 text-right">
-                            <span class="block text-[#ff6b35] font-semibold text-sm break-all">sales@imperiumapp.com</span>
-                            <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">Replies in 1 day</span>
+                        <span class="min-w-0 flex-1 flex items-center justify-between gap-6">
+                            <span class="min-w-0">
+                                <span class="block text-white font-bold text-lg">Sales &amp; new projects</span>
+                                <span class="block text-sm text-[#D1D5DB] mt-1">Pricing, demos and scoping a new deployment.</span>
+                            </span>
+                            <span class="shrink-0 text-right">
+                                <span class="block text-[#ff8555] font-medium text-sm break-all">sales@imperiumapp.com</span>
+                                <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">Replies in 1 day</span>
+                            </span>
                         </span>
                     </a>
 
                     <a href="tel:+97142443417"
-                        class="group flex items-center justify-between gap-6 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
-                        <span class="min-w-0">
-                            <span class="block text-white font-bold text-lg">Speak to someone</span>
-                            <span class="block text-sm text-[#D1D5DB] mt-1">Straight through to the Dubai head office.</span>
+                        class="group flex items-center gap-5 py-6 border-b border-white/10 hover:border-[#ff6b35]/40 transition-colors">
+                        <span class="imp-support-icon">
+                            <span class="material-symbols-outlined text-lg" data-icon="call">call</span>
                         </span>
-                        <span class="shrink-0 text-right">
-                            <span class="block text-[#ff6b35] font-semibold text-sm">+971 4 244 3417</span>
-                            <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">Head office</span>
+                        <span class="min-w-0 flex-1 flex items-center justify-between gap-6">
+                            <span class="min-w-0">
+                                <span class="block text-white font-bold text-lg">Prefer to talk?</span>
+                                <span class="block text-sm text-[#D1D5DB] mt-1">Straight through to the Dubai head office.</span>
+                            </span>
+                            <span class="shrink-0 text-right">
+                                <span class="block text-[#ff8555] font-medium text-sm">+971 4 244 3417</span>
+                                <span class="block text-[11px] uppercase tracking-wider text-[#D1D5DB] mt-1">Head office</span>
+                            </span>
                         </span>
                     </a>
                 </div>
@@ -687,6 +726,27 @@
                     <a href="{{ url('casestudy') }}" class="hover:text-orange-300 transition-colors">Case Studies</a>
                 </div>
                 <div class="flex gap-2 order-2 md:order-3">
+                    <a href="https://www.linkedin.com/company/imperium-software-technologies/" target="_blank"
+                        rel="noopener" aria-label="LinkedIn"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
+                            viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                        </svg></a>
+                    <a href="https://wa.me/97142443417" target="_blank"
+                        rel="noopener" aria-label="WhatsApp"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
+                            viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                            <path
+                                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.44-1.42a9.87 9.87 0 0 0 4.6 1.17h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.39 1.32-1.93 1.4-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.38-.24.63-.15.25.1 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.7-.17 1.38z" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/imperiumsoftware/" target="_blank" rel="noopener"
+                        aria-label="Instagram"
+                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
+                            viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg></a>
                     <a href="https://www.facebook.com/imperiumapp" target="_blank" rel="noopener" aria-label="Facebook"
                         class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
                             viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
@@ -699,26 +759,12 @@
                             <path
                                 d="M17.5 3h3l-6.6 7.6L21.7 21h-6.1l-4.3-5.6L6.3 21H3.3l7-8.1L2.6 3h6.2l3.9 5.1L17.5 3zm-1.1 16h1.7L7.7 4.8H5.9L16.4 19z" />
                         </svg></a>
-                    <a href="https://www.instagram.com/imperiumsoftware/" target="_blank" rel="noopener"
-                        aria-label="Instagram"
-                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
-                            viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
-                            <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                        </svg></a>
                     <a href="https://www.youtube.com/@imperiumsoftwaretechnologi9361" target="_blank" rel="noopener"
                         aria-label="YouTube"
                         class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
                             viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
                             <path
                                 d="M23 12s0-3.2-.4-4.7c-.2-.9-.9-1.5-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4c-.8.2-1.5.8-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.9.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4c.8-.2 1.5-.8 1.7-1.7.4-1.5.4-4.7.4-4.7zM9.8 15.3V8.7l6.2 3.3-6.2 3.3z" />
-                        </svg></a>
-                    <a href="https://www.linkedin.com/company/imperium-software-technologies/" target="_blank"
-                        rel="noopener" aria-label="LinkedIn"
-                        class="w-8 h-8 rounded-full bg-white/10 hover:bg-orange-500/30 text-white flex items-center justify-center transition-colors"><svg
-                            viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
                         </svg></a>
                 </div>
             </div>

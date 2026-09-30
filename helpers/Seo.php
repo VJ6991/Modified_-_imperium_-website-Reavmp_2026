@@ -221,8 +221,7 @@ class Seo
             'telephone'   => '+971-4-244-3417',
             'address'     => [
                 '@type'           => 'PostalAddress',
-                'streetAddress'   => '1504, 1 Lake Plaza, Cluster T, Jumeirah Lakes Towers',
-                'postOfficeBoxNumber' => '73916',
+                'streetAddress'   => 'Unit 211, Al Reyami Building, Karama (near Karama Post Office)',
                 'addressLocality' => 'Dubai',
                 'addressCountry'  => 'AE',
             ],

@@ -69,7 +69,7 @@
 jQuery(document).ready(function() {
 
     var locations = [
-        ['<b> Head Office   </b>,<br>P.O. Box No : 73916, <br/> 1504, 1 Lake Plaza <br/> Cluster T, Jumeirah Lakes Towers, <br/> Dubai, UAE.', 22.067552, 55.144309, 4],
+        ['<b> Head Office   </b>,<br>Unit 211, Al Reyami Building, <br/> Karama, Dubai, UAE. <br/> Landmark: Near Karama Post Office', 22.067552, 55.144309, 4],
 
 
        
