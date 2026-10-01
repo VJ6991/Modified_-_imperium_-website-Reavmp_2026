@@ -265,7 +265,7 @@
         <div class="flex justify-between items-center px-5 sm:px-8 py-4 max-w-7xl mx-auto">
             <div class="flex items-center gap-6 lg:gap-10">
                 <div class="flex items-center gap-2 mt-1"><a href="{{ url('') }}"><img
-                            alt="Imperium Software Technologies" class="h-9 sm:h-10 w-auto"
+                            alt="Imperium Software Technologies" class="h-10 sm:h-11 w-auto"
                             src="{{ asset('image/imperium-logo-orange-new.png') }}" /></a></div>
             </div>
             <div class="flex items-center gap-3">
@@ -437,11 +437,11 @@
                         <p class="mt-1 text-[13px] text-white/55">New projects, pricing and demos</p>
                         <a href="tel:+97142443417"
                             class="mt-4 flex items-center gap-2.5 text-sm font-semibold hover:text-brand transition-colors">
-                            <span class="material-symbols-outlined text-brand text-xl">call</span> +971 4 244 3417
+                            <span class="material-symbols-outlined text-brand text-base">call</span> +971 4 244 3417
                         </a>
                         <a href="mailto:sales@imperiumapp.com"
                             class="mt-3 flex items-center gap-2.5 text-sm font-semibold break-all hover:text-brand transition-colors">
-                            <span class="material-symbols-outlined text-brand text-xl">mail</span> sales@imperiumapp.com
+                            <span class="material-symbols-outlined text-brand text-base">mail</span> sales@imperiumapp.com
                         </a>
                     </div>
 
@@ -656,7 +656,7 @@
                         Pick the route that fits — we'll route you to the right desk.
                     </p>
                     <div class="mt-7 inline-flex items-center gap-2.5 text-sm text-[#D1D5DB]">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        <span class="w-2 h-2 rounded-full bg-brand"></span>
                         Support desk staffed 24 / 7, every day of the year
                     </div>
                 </div>

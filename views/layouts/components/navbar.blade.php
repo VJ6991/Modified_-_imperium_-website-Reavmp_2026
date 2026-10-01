@@ -1,6 +1,6 @@
 <style>
   /* Inner-page navbar — matches the homepage navbar: fixed translucent dark bar,
-     logo 36/40px, links 14px / weight 500 / stone-300 -> white. On desktop the two
+     logo 40/44px, links 14px / weight 500 / stone-300 -> white. On desktop the two
      links and the CTA sit inline; on mobile (<=640px) they collapse into a hamburger
      dropdown, exactly like the homepage. */
   .imp-nav a { text-decoration: none !important; }
@@ -14,7 +14,7 @@
     max-width: 1280px; margin: 0 auto; padding: 16px 32px;
   }
   .imp-nav__logo { display: flex; align-items: center; margin-top: 4px; }
-  .imp-nav__logo img { height: 40px; width: auto; display: block; cursor: pointer; }
+  .imp-nav__logo img { height: 44px; width: auto; display: block; cursor: pointer; }
   /* Primary CTA — replicates the homepage "Talk to an Expert" button. The glow was
      toned down (was 0.6/0.8 alpha with an 18-24px blur -- enough to bloom visibly around
      the button) and the hover brightness-filter flash was dropped for a plain lift, so
@@ -43,7 +43,7 @@
     /* collapse inline CTA into the dropdown */
     .imp-nav__cta { display: none; }
     .imp-nav__inner { padding: 12px 16px; gap: 12px; }
-    .imp-nav__logo img { height: 34px; }
+    .imp-nav__logo img { height: 40px; }
 
     .imp-nav__burger {
       display: inline-flex; align-items: center; justify-content: center;

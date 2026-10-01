@@ -37,6 +37,9 @@
    <!-- Css Files -->
    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+   <!-- Self-hosted Material Symbols -- the support-band icons below match the homepage
+        and contact page, which both use this icon set rather than Font Awesome. -->
+   <link href="{{asset('css/material-symbols.css')}}" rel="stylesheet">
    <link href="{{asset('css/animate.min.css')}}" rel="stylesheet">
    <link href="{{asset('css/owl.carousel.css')}}?v=<?php echo VERSION; ?>" rel="stylesheet">
    <!-- Self-hosted fonts (Rubik, PT Sans, Satoshi) — no CDN dependency, so the pages
@@ -123,7 +126,7 @@ gtag('config', 'UA-212453304-1');
         .imp-support h2 { font-family: 'Satoshi', sans-serif; font-weight: 700; color: #fff; font-size: 30px; line-height: 1.1; letter-spacing: -.02em; margin: 0; }
         .imp-support .imp-support-sub { margin: 20px 0 0; color: #D1D5DB; font-size: 16px; line-height: 1.65; max-width: 28rem; }
         .imp-support .imp-support-staffed { margin-top: 26px; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: #D1D5DB; }
-        .imp-support .imp-support-dot { width: 8px; height: 8px; border-radius: 50%; background: #34D399; display: inline-block; flex: 0 0 auto; }
+        .imp-support .imp-support-dot { width: 8px; height: 8px; border-radius: 50%; background: #ff6b35; display: inline-block; flex: 0 0 auto; }
         .imp-support .imp-support-brk { display: none; }
         .imp-support-rows { border-top: 1px solid rgba(255,255,255,.1); }
         .imp-support-row { display: flex; align-items: center; gap: 20px; padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.1); text-decoration: none; transition: border-color .25s ease; }
@@ -138,9 +141,10 @@ gtag('config', 'UA-212453304-1');
             display: flex; align-items: center; justify-content: center;
             background: rgba(255,255,255,.04);
             border: 1px solid rgba(255,255,255,.12);
-            color: #ff8555; font-size: 17px;
+            color: #ff8555;
             transition: color .3s ease, background .3s ease, border-color .3s ease;
         }
+        .imp-support-row .imp-support-icon .material-symbols-outlined { font-size: 19px; }
         .imp-support-row:hover .imp-support-icon, .imp-support-row:focus .imp-support-icon {
             color: #ff6b35;
             background: rgba(255,255,255,.06);
@@ -190,7 +194,7 @@ gtag('config', 'UA-212453304-1');
             </div>
             <div class="imp-support-rows">
                 <a class="imp-support-row" href="mailto:support@imperiumapp.com">
-                    <span class="imp-support-icon"><i class="fa fa-life-ring" aria-hidden="true"></i></span>
+                    <span class="imp-support-icon"><span class="material-symbols-outlined" data-icon="support_agent">support_agent</span></span>
                     <span class="imp-support-body">
                         <span>
                             <span class="imp-support-t">Technical support</span>
@@ -203,7 +207,7 @@ gtag('config', 'UA-212453304-1');
                     </span>
                 </a>
                 <a class="imp-support-row" href="mailto:sales@imperiumapp.com">
-                    <span class="imp-support-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+                    <span class="imp-support-icon"><span class="material-symbols-outlined" data-icon="handshake">handshake</span></span>
                     <span class="imp-support-body">
                         <span>
                             <span class="imp-support-t">Sales &amp; new projects</span>
@@ -216,7 +220,7 @@ gtag('config', 'UA-212453304-1');
                     </span>
                 </a>
                 <a class="imp-support-row" href="tel:+97142443417">
-                    <span class="imp-support-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="imp-support-icon"><span class="material-symbols-outlined" data-icon="call">call</span></span>
                     <span class="imp-support-body">
                         <span>
                             <span class="imp-support-t">Prefer to talk?</span>
