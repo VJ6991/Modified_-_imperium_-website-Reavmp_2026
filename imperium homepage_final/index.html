@@ -2310,9 +2310,14 @@
                 { sel: 'section:nth-of-type(5) .grid > div', variant: 'reveal-scale', stagger: true, step: 200, cap: 900 },
                 // Deep expertise cards — same wider step + own cap as the services row
                 { sel: 'section:nth-of-type(7) .grid > div', variant: '', stagger: true, step: 200, cap: 900 },
-                // Industries rows + Why Imperium items
-                { sel: '.space-y-4 > .group', variant: 'reveal-left', stagger: true, step: 150, cap: 900 },
-                { sel: '.grid.gap-8 > .flex.gap-6', variant: 'reveal-right', stagger: true, step: 150, cap: 900 },
+                // Industries rows + Why Imperium items. Lower step/cap than the other
+                // groups above -- these are a vertically stacked list, so each row already
+                // gets its own natural stagger from scroll position crossing the
+                // IntersectionObserver threshold one at a time. Stacking a large artificial
+                // delay (was 150ms/row, up to 900ms) on top of that made later rows (Healthcare,
+                // Insurance, And more...) feel like they lagged even once fully in view.
+                { sel: '.space-y-4 > .group', variant: 'reveal-left', stagger: true, step: 60, cap: 240 },
+                { sel: '.grid.gap-8 > .flex.gap-6', variant: 'reveal-right', stagger: true, step: 60, cap: 240 },
                 // Metrics tiles
                 { sel: '#metrics .grid > div', variant: 'reveal-scale', stagger: true },
             ];
