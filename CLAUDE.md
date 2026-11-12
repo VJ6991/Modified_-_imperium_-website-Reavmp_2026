@@ -1,5 +1,11 @@
 # imperium-lite — project reference (READ FIRST)
 
+> **2026-11-11: new Next.js rebuild in `imperium-web/`.** A full redesign based on the
+> "Website Content As-Is Audit & To-Be Copy" (03 Nov 2026) lives in `imperium-web/` (Next.js 16 static
+> export). It is intended to replace this PHP build. See `imperium-web/README.md`, `imperium-web/PRODUCT.md`
+> and `imperium-web/DESIGN.md`. The PHP site below is untouched and still the live candidate until the
+> team approves the rebuild.
+
 ## What this is — never forget
 
 - **imperium-lite is a STANDALONE project.** It must not depend on any file outside its

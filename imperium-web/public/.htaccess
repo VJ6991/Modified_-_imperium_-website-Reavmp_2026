@@ -1,0 +1,76 @@
+# imperiumapp.com: static Next.js export served by Apache.
+# Pages are folders with index.html (trailingSlash: true).
+
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # ---------------------------------------------------- canonical host + HTTPS
+    RewriteCond %{HTTP_HOST} ^imperiumapp\.com$ [NC]
+    RewriteRule ^(.*)$ https://www.imperiumapp.com/$1 [R=301,L]
+    RewriteCond %{HTTP_HOST} ^www\.imperiumapp\.com$ [NC]
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://www.imperiumapp.com/$1 [R=301,L]
+
+    # ---------------------------------------------------- legacy URL redirects (301)
+    # Each old URL goes to the closest new page, never a blanket redirect to "/".
+    # Cross-check against a Search Console "Pages" export before launch.
+
+    # Previous build (imperium-lite) routes
+    RewriteRule ^industry-influence/?$          /industries/ [R=301,L]
+    RewriteRule ^casestudy/?$                   /case-studies/ [R=301,L]
+    RewriteRule ^healthcare/?$                  /industries/healthcare/ [R=301,L]
+    RewriteRule ^(banking|finance|debtcollection)/?$ /industries/banking-financial-services/ [R=301,L]
+    RewriteRule ^insurance/?$                   /industries/insurance/ [R=301,L]
+    RewriteRule ^(realestate|retail|ecommerce)/?$ /industries/retail-real-estate/ [R=301,L]
+    RewriteRule ^helpdesk/?$                    /solutions/customer-experience/ [R=301,L]
+    RewriteRule ^(logistics|educationsector|businesscenter)/?$ /industries/ [R=301,L]
+
+    # Older site routes
+    RewriteRule ^solutions-healthcare/?$        /industries/healthcare/ [R=301,L]
+    RewriteRule ^solutions-debt-collection/?$   /industries/banking-financial-services/ [R=301,L]
+    RewriteRule ^solutions-(logistics|business-center)/?$ /industries/ [R=301,L]
+    RewriteRule ^solutions-service-industry/?$  /solutions/customer-experience/ [R=301,L]
+    RewriteRule ^cx(/.*)?$                      /solutions/customer-experience/ [R=301,L]
+    RewriteRule ^contact-center/?$              /solutions/customer-experience/ [R=301,L]
+    RewriteRule ^products-cti-(solutions|crm-connecter|outlook-connecter)/?$ /solutions/enterprise-communications/ [R=301,L]
+    RewriteRule ^products-(ivrsolutions|sms-solutions|fax-server|call-reporter)/?$ /products/ [R=301,L]
+    RewriteRule ^1products(/.*)?$               /products/ [R=301,L]
+    RewriteRule ^multimedia/?$                  /products/ [R=301,L]
+    # legacy /products/<module> pages (keep the three new product pages)
+    RewriteCond %{REQUEST_URI} !^/products/(iconnect|inaipi|listen-iq)(/|$)
+    RewriteRule ^products/(.+)$                 /products/ [R=301,L]
+    RewriteRule ^inaipi/?$                      /products/inaipi/ [R=301,L]
+    RewriteRule ^avaya/?$                       /solutions/enterprise-communications/ [R=301,L]
+    RewriteRule ^(partners-avaya|partners-cisco|partners-microsoft-lync|strategic-partnerships|channel-partner)/?$ /partners/ [R=301,L]
+    RewriteRule ^about/(.+)$                    /about/ [R=301,L]
+    RewriteRule ^registration/?$                /contact/ [R=301,L]
+    RewriteRule ^(blog-news|resources)(/.*)?$   /insights/ [R=301,L]
+    RewriteRule ^faqs/?$                        / [R=301,L]
+    RewriteRule ^(lic|index)/?$                 / [R=301,L]
+    RewriteRule ^index\.php$                    / [R=301,L]
+</IfModule>
+
+# ---------------------------------------------------- caching
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|woff2|png|jpg|webp|avif|svg|ico)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+    <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </If>
+    <FilesMatch "\.html$">
+        Header set Cache-Control "public, max-age=0, must-revalidate"
+    </FilesMatch>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain application/xml
+</IfModule>

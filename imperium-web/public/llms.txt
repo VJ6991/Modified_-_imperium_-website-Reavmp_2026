@@ -1,0 +1,40 @@
+# Imperium Software Technologies
+
+> Imperium Software Technologies helps enterprises connect customer engagement, communications infrastructure and applied AI. Founded in Dubai in 2005, it builds and deploys contact centre and communications platforms and supports them with consulting, integration and 24×7 managed services. Offices in Dubai (head office), Singapore, Chennai and Bengaluru. Over 200 enterprise customers and 75+ specialists. Founder & CEO: Manikandan Karunakaran.
+
+Imperium's heritage is telephony and computer telephony integration (CTI), with deep Avaya expertise. Its own product, iConnect, adds an omnichannel contact centre to Avaya IP Office. It also deploys and supports Inaipi (an AI-native cloud customer experience platform) and Listen IQ (social listening and conversation intelligence).
+
+## Solutions
+- [Customer Experience](https://www.imperiumapp.com/solutions/customer-experience/): contact centre modernization, omnichannel agent desktop, supervision, surveys.
+- [Enterprise Communications](https://www.imperiumapp.com/solutions/enterprise-communications/): Avaya integration, CTI and CRM connectivity, call reporting, unified communications.
+- [AI & Automation](https://www.imperiumapp.com/solutions/ai-automation/): AI chat and voice agents with human handoff, ticket classification and routing, sentiment detection.
+- [Integration & Modernization](https://www.imperiumapp.com/solutions/integration-modernization/): staged modernization, cloud migration, on-premise and in-country hosting.
+
+## Products
+- [iConnect](https://www.imperiumapp.com/products/iconnect/): omnichannel contact centre for Avaya IP Office. Unified agent desktop, inbound ACD, web chat, observe/whisper/barge-in, 14 reports and a no-code report builder, Salesforce integration, on-premise and high-availability deployment.
+- [Inaipi](https://www.imperiumapp.com/products/inaipi/): part of the Imperium group. AI-native cloud CX platform with omnichannel contact centre, ticketing, surveys and AI agents; hosted as a service or in-country by telecom operators.
+- [Listen IQ](https://www.imperiumapp.com/products/listen-iq/): part of the Imperium group. Social listening, sentiment and topic analysis, unified social inbox.
+
+## Industries
+- [Banking & Financial Services](https://www.imperiumapp.com/industries/banking-financial-services/)
+- [Healthcare](https://www.imperiumapp.com/industries/healthcare/)
+- [Government & Public Services](https://www.imperiumapp.com/industries/government/)
+- [Telecommunications](https://www.imperiumapp.com/industries/telecommunications/)
+- [Hospitality](https://www.imperiumapp.com/industries/hospitality/)
+- [Insurance](https://www.imperiumapp.com/industries/insurance/)
+- [Retail & Real Estate](https://www.imperiumapp.com/industries/retail-real-estate/)
+
+## Case studies
+- [Ethio telecom](https://www.imperiumapp.com/case-studies/ethio-telecom/): in-country contact centre platform running Ethio telecom's 2,000-agent omnichannel contact centre and resold as CCaaS to 35+ government bodies, banks and enterprises.
+- [Orange](https://www.imperiumapp.com/case-studies/orange/): one Listen IQ social care desk for seven brand accounts and 10,000+ daily interactions, run by 10 agents.
+- [Emirates Hospital](https://www.imperiumapp.com/case-studies/emirates-hospital/): one 800 number and one Avaya contact centre for seven hospital branches, with patient-record screen pop and automatic callback.
+- [Concordia](https://www.imperiumapp.com/case-studies/concordia/): reliable contact centre reporting for a 200-calls-an-hour facilities helpdesk.
+- [Omniyat](https://www.imperiumapp.com/case-studies/omniyat/): Avaya IP Office Contact Center integrated with Salesforce.
+- [Macemacro](https://www.imperiumapp.com/case-studies/macemacro/): several contact centres moved onto one cloud platform.
+- [Growthgate Capital](https://www.imperiumapp.com/case-studies/growthgate/): PBX to cloud unified communications in a couple of days.
+
+## Company
+- [About](https://www.imperiumapp.com/about/)
+- [Services](https://www.imperiumapp.com/services/)
+- [Partners](https://www.imperiumapp.com/partners/): telecom operators and channel partners offering Imperium platforms to their enterprise customers. Operators hosting the platform in-country include Ethio telecom (Ethiopia), du (UAE), Batelco (Bahrain), SLT-Mobitel (Sri Lanka), Mauritius Telecom and Vodafone Qatar (on-premise).
+- [Contact](https://www.imperiumapp.com/contact/): sales@imperiumapp.com, +971 4 244 3417; 24×7 support for customers at support@imperiumapp.com.
