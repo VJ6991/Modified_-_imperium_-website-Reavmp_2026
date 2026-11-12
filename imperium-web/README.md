@@ -61,3 +61,6 @@ Search the code for `CONFIRM` and `DRAFT`. In short:
 10. From the Listen IQ operator decks (Batelco, Ethio telecom): the six operators and their customer
     references on `/partners/` (`src/content/operators.ts`), the Ethio telecom case study, and Listen IQ use cases.
 11. Leadership headshots (shown in the deck) as image files, if the About page should carry photos.
+12. From the 2026 Zoom partnership deck: the Zoom technology partnership section on `/partners/` and the Zoom FAQ on the
+    homepage (Zoom must approve the wording; no Zoom logo until it does), the About page timeline (2009 to 2023+),
+    the "1M+ AI-based customer interactions" figure (confirm what is counted), and the five-layer ecosystem on `/solutions/`.

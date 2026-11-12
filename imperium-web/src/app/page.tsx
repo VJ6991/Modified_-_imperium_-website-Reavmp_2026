@@ -87,6 +87,10 @@ const homeFaqs = [
     a: "No. We connect the contact centre to the CRM you already use, such as Salesforce or Zoho, so the customer's record opens when a call or chat connects.",
   },
   {
+    q: "Does Imperium work with Zoom?",
+    a: "Yes. Imperium works with Zoom to extend its platform for enterprise customer experience. We add social listening with Listen IQ, case management, intelligent automation, custom integrations and industry solutions, and deliver and support them with our own team.",
+  },
+  {
     q: "Which industries do you work with?",
     a: "Banking and financial services, government, telecommunications, healthcare, hospitality, insurance, and retail and real estate, mainly across the Gulf, Africa and South Asia.",
   },
@@ -100,7 +104,7 @@ export default function Home() {
       <section aria-labelledby="hero-title" className="overflow-hidden border-b border-rule bg-paper">
         <div className="wrap pt-12 md:pt-20">
           <h1 id="hero-title" className="max-w-[17ch] text-display font-extrabold">
-            Connect every interaction. Make every experience work harder.
+            Connect every interaction. Make every experience count.
           </h1>
           <div className="mt-8 flex max-w-[42rem] flex-col gap-8 md:mt-10">
             <p className="text-lede text-ink-2">

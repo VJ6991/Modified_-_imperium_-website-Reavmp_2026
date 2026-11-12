@@ -8,9 +8,9 @@ import { site } from "@/content/site";
 import { pageMetadata, serviceLd } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Partners: telecom operators and channel partners",
+  title: "Partners: Zoom, telecom operators and channel partners",
   description:
-    "Partner with Imperium to offer contact centre, customer experience and social intelligence services to your enterprise customers, hosted in your own data centre and supported by our team.",
+    "Imperium extends Zoom for enterprise customer experience, and works with telecom operators and channel partners to offer contact centre, CX and social intelligence services hosted in their own data centres.",
   path: "/partners/",
 });
 
@@ -35,6 +35,12 @@ const model = [
   { name: "Host and package", detail: "Run the platform in your data centre and package it with connectivity, under your brand or co-branded." },
   { name: "Launch and sell", detail: "Joint go-to-market, sales enablement and pre-sales support from our team." },
   { name: "Deliver and support", detail: "Implementation and managed services by Imperium, by your teams, or by trained partners." },
+];
+
+const zoomExtensions: { name: string; detail: string; with: string; href?: string }[] = [
+  { name: "Listen", detail: "Understand customer conversations, sentiment and emerging trends through social listening and customer intelligence.", with: "Social listening with Listen IQ", href: "/products/listen-iq/" },
+  { name: "Act", detail: "Turn customer interactions into action, with cases opened, assigned and followed up automatically.", with: "Case management and intelligent automation" },
+  { name: "Experience", detail: "Deliver experiences built for each industry, connected to the systems the business already runs.", with: "Custom integrations and industry solutions, including hospitality" },
 ];
 
 export default function PartnersPage() {
@@ -151,7 +157,43 @@ export default function PartnersPage() {
         </div>
       </Section>
 
-      <Section labelledBy="team-title">
+      {/* Technology partner. From Imperium's 2026 Zoom partnership deck.
+          CONFIRM before launch: partnership status and public wording approved by Zoom; no Zoom logo used until approved. */}
+      <Section labelledBy="zoom-title">
+        <div className="mb-12 grid gap-6 lg:grid-cols-[1fr_1.4fr] lg:items-end lg:gap-20">
+          <h2 id="zoom-title" className="text-h2">Technology partner: Zoom</h2>
+          <p className="text-lede text-ink-2">
+            Imperium works with Zoom to extend its platform for enterprise customer experience. Zoom brings the cloud
+            platform and its AI. We add what each business needs around it, then deliver and support it.
+          </p>
+        </div>
+        <ul className="border-t-2 border-ink">
+          {zoomExtensions.map((z) => (
+            <li key={z.name} className="grid gap-3 border-b border-rule py-7 lg:grid-cols-[13rem_1fr_1fr] lg:gap-8">
+              <div className="flex items-start gap-3">
+                <span className="pt-1.5"><Station color="var(--color-blue)" /></span>
+                <h3 className="text-[1.35rem] font-extrabold leading-tight">{z.name}</h3>
+              </div>
+              <p className="text-ink-2">{z.detail}</p>
+              <p className="text-[0.97rem] font-semibold">
+                {z.href ? <Link href={z.href} className="underline decoration-rule underline-offset-4 hover:decoration-orange">{z.with}</Link> : z.with}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <dl className="mt-12 grid gap-10 sm:grid-cols-2">
+          <div className="border-t-2 border-ink pt-4">
+            <dt className="font-extrabold">Zoom brings</dt>
+            <dd className="mt-2 text-ink-2">Platform capability, agentic AI, cloud-native scale, and integrated customer and employee experience.</dd>
+          </div>
+          <div className="border-t-2 border-orange pt-4">
+            <dt className="font-extrabold">Imperium brings</dt>
+            <dd className="mt-2 text-ink-2">Customer experience transformation, cloud and AI architecture, enterprise integration, native enterprise communications, and managed services built on our own software.</dd>
+          </div>
+        </dl>
+      </Section>
+
+      <Section tone="mist" labelledBy="team-title">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
           <h2 id="team-title" className="text-h2">Your partnership team</h2>
           <ul className="grid gap-6 sm:grid-cols-2">

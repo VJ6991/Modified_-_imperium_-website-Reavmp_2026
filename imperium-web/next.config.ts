@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: { unoptimized: true },
   poweredByHeader: false,
+  // Fewer build workers: keeps static generation stable on low-memory machines.
+  experimental: { cpus: 2 },
   turbopack: {
     root: process.cwd(),
     rules: {

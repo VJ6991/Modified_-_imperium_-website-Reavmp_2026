@@ -256,7 +256,7 @@ export const solutions: Solution[] = [
     faqs: [
       {
         q: "Can we keep customer data in the UAE?",
-        a: "Yes. Options include on-premise deployment on your own infrastructure, hosting in our data centre, or a cloud platform hosted in-country by a telecom operator. We confirm the right option for each platform and your policy requirements.",
+        a: "Yes. Options include on-premise deployment on your own infrastructure, hosting in our data centre, a cloud platform hosted in-country by a telecom operator, or a sovereign or multi-cloud set-up. We confirm the right option for each platform and your policy requirements.",
       },
       {
         q: "Do we have to move everything to the cloud at once?",

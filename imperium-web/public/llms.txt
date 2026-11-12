@@ -1,8 +1,8 @@
 # Imperium Software Technologies
 
-> Imperium Software Technologies helps enterprises connect customer engagement, communications infrastructure and applied AI. Founded in Dubai in 2005, it builds and deploys contact centre and communications platforms and supports them with consulting, integration and 24×7 managed services. Offices in Dubai (head office), Singapore, Chennai and Bengaluru. Over 200 enterprise customers and 75+ specialists. Founder & CEO: Manikandan Karunakaran.
+> Imperium Software Technologies helps enterprises connect customer engagement, communications infrastructure and applied AI. Founded in Dubai in 2005, it builds and deploys contact centre and communications platforms and supports them with consulting, integration and 24×7 managed services. Offices in Dubai (head office), Singapore, Chennai and Bengaluru. Over 200 enterprise customers, 75+ specialists, 1.8M+ conversations and 1M+ AI-based customer interactions on its platforms. Founder & CEO: Manikandan Karunakaran.
 
-Imperium's heritage is telephony and computer telephony integration (CTI), with deep Avaya expertise. Its own product, iConnect, adds an omnichannel contact centre to Avaya IP Office. It also deploys and supports Inaipi (an AI-native cloud customer experience platform) and Listen IQ (social listening and conversation intelligence).
+Imperium's heritage is telephony and computer telephony integration (CTI), with deep Avaya expertise. Imperium works with Zoom to extend Zoom's platform for enterprise customer experience (social listening, case management, intelligent automation, custom integrations and industry solutions). Its own product, iConnect, adds an omnichannel contact centre to Avaya IP Office. It also deploys and supports Inaipi (an AI-native cloud customer experience platform) and Listen IQ (social listening and conversation intelligence).
 
 ## Solutions
 - [Customer Experience](https://www.imperiumapp.com/solutions/customer-experience/): contact centre modernization, omnichannel agent desktop, supervision, surveys.
@@ -36,5 +36,5 @@ Imperium's heritage is telephony and computer telephony integration (CTI), with 
 ## Company
 - [About](https://www.imperiumapp.com/about/)
 - [Services](https://www.imperiumapp.com/services/)
-- [Partners](https://www.imperiumapp.com/partners/): telecom operators and channel partners offering Imperium platforms to their enterprise customers. Operators hosting the platform in-country include Ethio telecom (Ethiopia), du (UAE), Batelco (Bahrain), SLT-Mobitel (Sri Lanka), Mauritius Telecom and Vodafone Qatar (on-premise).
+- [Partners](https://www.imperiumapp.com/partners/): technology partnership with Zoom; telecom operators and channel partners offering Imperium platforms to their enterprise customers. Operators hosting the platform in-country include Ethio telecom (Ethiopia), du (UAE), Batelco (Bahrain), SLT-Mobitel (Sri Lanka), Mauritius Telecom and Vodafone Qatar (on-premise).
 - [Contact](https://www.imperiumapp.com/contact/): sales@imperiumapp.com, +971 4 244 3417; 24×7 support for customers at support@imperiumapp.com.

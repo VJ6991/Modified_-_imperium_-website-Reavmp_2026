@@ -17,14 +17,15 @@ export const site = {
   },
   supportPhone: "+971 4 244 3417",
   linkedin: "https://www.linkedin.com/company/13718810/", // CONFIRM: public company page URL
-  // From Imperium's 2026 partner presentation. CONFIRM before launch: the deck also says
-  // "17+ years", which does not match the 2005 founding date used elsewhere.
+  // From Imperium's 2026 partner presentations (Batelco, Zoom). CONFIRM before launch: the decks say
+  // "17+ years" and the Zoom deck's timeline starts in 2009, while the live site says founded 2005.
+  // "1M+ AI-based CX interactions" is from the Zoom deck: confirm what is counted.
   stats: [
     { value: "2005", label: "founded in Dubai" },
     { value: "200+", label: "enterprise customers" },
     { value: "75+", label: "specialists" },
     { value: "1.8M+", label: "conversations handled on our platforms" },
-    { value: "24×7", label: "support for customers" },
+    { value: "1M+", label: "AI-based customer interactions" },
   ],
   leadership: [
     { name: "Manikandan Karunakaran", title: "Founder & CEO", partners: false },

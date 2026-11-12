@@ -190,7 +190,7 @@ export const industries: Industry[] = [
     intro:
       "In retail and property, the first organisation to respond often wins the customer. We help retailers, developers and brokerages connect enquiries, service conversations and the CRM, so no lead waits.",
     metaDescription:
-      "Contact centre and CRM integration for retail and real estate: lead routing, Salesforce integration, missed-enquiry callback, order-status self-service.",
+      "Contact centre, CRM integration and social listening for retail and real estate: lead routing, Salesforce integration, missed-enquiry callback, buyer intent and sentiment from social channels.",
     pressures: [
       { title: "Leads go cold quickly", detail: "An enquiry answered tomorrow may already have gone to a competitor." },
       { title: "CRM and phones apart", detail: "Sales teams log calls by hand, or not at all." },
@@ -200,13 +200,15 @@ export const industries: Industry[] = [
       { title: "Lead routing with CRM integration", detail: "Calls open the lead in Salesforce or your CRM, and are logged against it automatically." },
       { title: "Missed-enquiry callback", detail: "Missed and abandoned calls are queued for callback so no enquiry is lost." },
       { title: "Order and booking status", detail: "Self-service answers for order or viewing status, with handover to an agent." },
+      { title: "Social listening for launches and brands", detail: "Listen IQ follows market trends and competitors, captures buyer enquiries from comments and messages, reads intent and sentiment, and flags complaints early so the team can act before they hurt the brand." },
     ],
     route: { inputs: ["Calls", "Web enquiries", "Field staff"], hub: "Lead desk", stops: ["Lead opens in CRM", "Missed calls returned", "No enquiry lost"] },
     lines: ["cx", "comms"],
-    platforms: ["iconnect", "inaipi"],
+    platforms: ["iconnect", "inaipi", "listen-iq"],
     caseStudies: ["omniyat"],
     faqs: [
       { q: "Can calls be logged in Salesforce automatically?", a: "Yes. With CRM integration, the caller's record opens when the call connects and the call is logged against it, as we set up for Omniyat with Salesforce." },
+      { q: "Can we capture buyer enquiries from social media?", a: "Yes. Listen IQ brings comments and direct messages from connected accounts into one inbox, identifies high-intent buyers by their intent and sentiment, and routes them to sales or into your CRM." },
     ],
   },
 ];

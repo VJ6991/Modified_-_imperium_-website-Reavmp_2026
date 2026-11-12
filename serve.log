@@ -11412,3 +11412,309 @@
  HTTP  12/11/2026 10:56:55 am ::1 Returned 200 in 1 ms
  HTTP  12/11/2026 10:56:55 am ::1 GET /industries/telecommunications/__next._tree.txt?_rsc=5CB68i4pnAekjehf
  HTTP  12/11/2026 10:56:55 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /solutions/ai-automation/
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 23 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/media/ff0a690452bfd4f5-s.p.07m19b7gifklb.woff2
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 2 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/0nbvdc23sfg3g.css
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /brand/imperium-logo-orange.png
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/1pcw6gskne7pf.js
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /brand/imperium-logo-white.png
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 4 ms
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 4 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/1wnov70f88xjy.js
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 1 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/092r-mewpaf3q.js
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 1 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/0c98xzjfks9hq.js
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/turbopack-2u1d16houkiyo.js
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/3jood4vplx85z.js
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/3qfy96eoyh-ek.js
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 5 ms
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 6 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /_next/static/chunks/0ga2my1jzj11a.js
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:15 am ::1 HEAD /
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:15 am ::1 HEAD /services/
+ HTTP  12/11/2026 10:59:15 am ::1 GET /icon.png?icon.3azpzei93amjg.png
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 304 in 4 ms
+ HTTP  12/11/2026 10:59:15 am ::1 HEAD /case-studies/
+ HTTP  12/11/2026 10:59:15 am ::1 HEAD /partners/
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /services/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:15 am ::1 GET /partners/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:15 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /case-studies/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:16 am ::1 HEAD /about/
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 HEAD /insights/
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /about/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 HEAD /contact/
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /__next._index.txt?_rsc=SfApsxg7Z8u889nv
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /insights/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /contact/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /__next.__PAGE__.txt?_rsc=b_Tbi9qiP-x1cduD
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /services/__next.services.__PAGE__.txt?_rsc=P4ZT6swItNAgb5tr
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /case-studies/__next.case-studies.__PAGE__.txt?_rsc=KQyOxhOQEM8GYcHE
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /partners/__next.partners.__PAGE__.txt?_rsc=e9STFe2qqfyNy1wA
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /about/__next.about.__PAGE__.txt?_rsc=RVaxf9oFGLnYLzzr
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /insights/__next.insights.__PAGE__.txt?_rsc=i1UW1v56KzE95pG8
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /contact/__next.contact.__PAGE__.txt?_rsc=BzbWSru4Mq4TcxhP
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /_next/static/chunks/3avngcn0sbgtl.js
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 304 in 1 ms
+ HTTP  12/11/2026 10:59:16 am ::1 HEAD /solutions/ai-automation/
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /solutions/ai-automation/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 10:59:16 am ::1 GET /solutions/ai-automation/__next.solutions.$d$slug.__PAGE__.txt?_rsc=D6C5Am-OM2XScRKF
+ HTTP  12/11/2026 10:59:16 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 10:59:17 am ::1 HEAD /solutions/
+ HTTP  12/11/2026 10:59:17 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 10:59:17 am ::1 GET /solutions/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 10:59:17 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 10:59:17 am ::1 GET /solutions/__next.solutions.__PAGE__.txt?_rsc=ATpCiVUt4voSwwwp
+ HTTP  12/11/2026 10:59:17 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:02:54 am ::1 HEAD /products/inaipi/
+ HTTP  12/11/2026 11:02:54 am ::1 Returned 200 in 36 ms
+ HTTP  12/11/2026 11:02:54 am ::1 GET /products/inaipi/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 11:02:54 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:02:54 am ::1 GET /products/inaipi/__next.products.$d$slug.__PAGE__.txt?_rsc=M2LeeFCYJQAJgSI8
+ HTTP  12/11/2026 11:02:54 am ::1 Returned 200 in 9 ms
+ HTTP  12/11/2026 11:02:54 am ::1 HEAD /products/listen-iq/
+ HTTP  12/11/2026 11:02:54 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:02:54 am ::1 GET /products/listen-iq/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 11:02:54 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:02:54 am ::1 GET /products/listen-iq/__next.products.$d$slug.__PAGE__.txt?_rsc=M2LeeFCYJQAJgSI8
+ HTTP  12/11/2026 11:02:54 am ::1 Returned 200 in 30 ms
+ HTTP  12/11/2026 11:02:55 am ::1 HEAD /case-studies/orange/
+ HTTP  12/11/2026 11:02:55 am ::1 Returned 200 in 9 ms
+ HTTP  12/11/2026 11:02:55 am ::1 GET /case-studies/orange/__next._tree.txt?_rsc=6Y8-vtCHPUWZdVBO
+ HTTP  12/11/2026 11:02:55 am ::1 Returned 200 in 6 ms
+ HTTP  12/11/2026 11:02:55 am ::1 GET /case-studies/orange/__next.case-studies.$d$slug.__PAGE__.txt?_rsc=9t2uwbrchopSb-cn
+ HTTP  12/11/2026 11:02:55 am ::1 Returned 200 in 9 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/dubai-courts.webp
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 2 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/ethio-telecom.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/anantara.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/ritz-carlton.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/dubai-police.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/coca-cola.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/slt-mobitel.webp
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 5 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 5 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 4 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 4 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 4 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 16 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/bmw-agmc.webp
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 2 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/dubai-national-insurance.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/minor-hotels.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/mauritius-telecom.webp
+ HTTP  12/11/2026 11:03:11 am ::1 GET /clients/cinnamon.webp
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /_next/static/media/ffb8bbde65c71325-s.2o35gi0pd5-30.woff2
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 304 in 1 ms
+ HTTP  12/11/2026 11:03:11 am ::1 HEAD /solutions/enterprise-communications/
+ HTTP  12/11/2026 11:03:11 am ::1 HEAD /solutions/integration-modernization/
+ HTTP  12/11/2026 11:03:11 am ::1 HEAD /solutions/customer-experience/
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /solutions/customer-experience/__next._tree.txt?_rsc=5CB68i4pnAekjehf
+ HTTP  12/11/2026 11:03:11 am ::1 GET /solutions/enterprise-communications/__next._tree.txt?_rsc=5CB68i4pnAekjehf
+ HTTP  12/11/2026 11:03:11 am ::1 GET /solutions/integration-modernization/__next._tree.txt?_rsc=5CB68i4pnAekjehf
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 8 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 6 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /solutions/enterprise-communications/__next.solutions.$d$slug.__PAGE__.txt?_rsc=7MiOZYInKcgZI-7h
+ HTTP  12/11/2026 11:03:11 am ::1 GET /solutions/customer-experience/__next.solutions.$d$slug.__PAGE__.txt?_rsc=7MiOZYInKcgZI-7h
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:03:11 am ::1 GET /solutions/integration-modernization/__next.solutions.$d$slug.__PAGE__.txt?_rsc=7MiOZYInKcgZI-7h
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:03:11 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:03:19 am ::1 HEAD /products/
+ HTTP  12/11/2026 11:03:19 am ::1 HEAD /products/iconnect/
+ HTTP  12/11/2026 11:03:19 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:03:19 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:03:19 am ::1 GET /products/__next._tree.txt?_rsc=xpg1jlO5a3IpSyMd
+ HTTP  12/11/2026 11:03:19 am ::1 GET /products/iconnect/__next._tree.txt?_rsc=xpg1jlO5a3IpSyMd
+ HTTP  12/11/2026 11:03:19 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:03:19 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:03:19 am ::1 GET /products/iconnect/__next.products.$d$slug.__PAGE__.txt?_rsc=XMXevqwYRj2bEVbZ
+ HTTP  12/11/2026 11:03:19 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:03:19 am ::1 GET /products/__next.products.__PAGE__.txt?_rsc=apA9VfwftY9Dccl-
+ HTTP  12/11/2026 11:03:19 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:30 am ::1 HEAD /case-studies/
+ HTTP  12/11/2026 11:04:30 am ::1 Returned 200 in 24 ms
+ HTTP  12/11/2026 11:04:30 am ::1 GET /case-studies/orange/__next._index.txt?_rsc=cEHcr9GfRiNDWNFy
+ HTTP  12/11/2026 11:04:30 am ::1 Returned 200 in 11 ms
+ HTTP  12/11/2026 11:04:30 am ::1 GET /case-studies/__next._tree.txt?_rsc=J3aCeI8XavcLgRIG
+ HTTP  12/11/2026 11:04:30 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:30 am ::1 GET /case-studies/__next.case-studies.__PAGE__.txt?_rsc=cr79RQSUvdN4Xoum
+ HTTP  12/11/2026 11:04:30 am ::1 Returned 200 in 7 ms
+ HTTP  12/11/2026 11:04:35 am ::1 HEAD /
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:35 am ::1 HEAD /services/
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:35 am ::1 HEAD /partners/
+ HTTP  12/11/2026 11:04:35 am ::1 HEAD /about/
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 13 ms
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 13 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /services/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /partners/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 6 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /about/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:04:35 am ::1 HEAD /case-studies/ethio-telecom/
+ HTTP  12/11/2026 11:04:35 am ::1 HEAD /insights/
+ HTTP  12/11/2026 11:04:35 am ::1 HEAD /contact/
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /__next.__PAGE__.txt?_rsc=mGyEqgKcPKEFECKn
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 12 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /contact/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:35 am ::1 GET /insights/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:35 am ::1 GET /case-studies/ethio-telecom/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /services/__next.services.__PAGE__.txt?_rsc=hoBYUHKZpdMa9eRn
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 7 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /partners/__next.partners.__PAGE__.txt?_rsc=PrZu5P0QT69VBqx9
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /about/__next.about.__PAGE__.txt?_rsc=M9i5KZAfIKM3n3fm
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /case-studies/ethio-telecom/__next.case-studies.$d$slug.__PAGE__.txt?_rsc=INLtCXZHLF8pbWGT
+ HTTP  12/11/2026 11:04:35 am ::1 GET /insights/__next.insights.__PAGE__.txt?_rsc=ufSHhRz6XHmgLYsz
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 10 ms
+ HTTP  12/11/2026 11:04:35 am ::1 GET /contact/__next.contact.__PAGE__.txt?_rsc=kTmPpWvWnDv9CV5N
+ HTTP  12/11/2026 11:04:35 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:36 am ::1 HEAD /case-studies/emirates-hospital/
+ HTTP  12/11/2026 11:04:36 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:04:36 am ::1 GET /case-studies/emirates-hospital/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:36 am ::1 Returned 200 in 6 ms
+ HTTP  12/11/2026 11:04:36 am ::1 GET /case-studies/emirates-hospital/__next.case-studies.$d$slug.__PAGE__.txt?_rsc=INLtCXZHLF8pbWGT
+ HTTP  12/11/2026 11:04:36 am ::1 Returned 200 in 5 ms
+ HTTP  12/11/2026 11:04:38 am ::1 HEAD /case-studies/concordia/
+ HTTP  12/11/2026 11:04:38 am ::1 HEAD /case-studies/omniyat/
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 6 ms
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 8 ms
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/omniyat/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/concordia/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 5 ms
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 8 ms
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/concordia/__next.case-studies.$d$slug.__PAGE__.txt?_rsc=INLtCXZHLF8pbWGT
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/omniyat/__next.case-studies.$d$slug.__PAGE__.txt?_rsc=INLtCXZHLF8pbWGT
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:38 am ::1 HEAD /case-studies/macemacro/
+ HTTP  12/11/2026 11:04:38 am ::1 HEAD /case-studies/growthgate/
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 5 ms
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 5 ms
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/growthgate/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/macemacro/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 6 ms
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/growthgate/__next.case-studies.$d$slug.__PAGE__.txt?_rsc=INLtCXZHLF8pbWGT
+ HTTP  12/11/2026 11:04:38 am ::1 GET /case-studies/macemacro/__next.case-studies.$d$slug.__PAGE__.txt?_rsc=INLtCXZHLF8pbWGT
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:04:38 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /solutions/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /solutions/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /solutions/__next.solutions.__PAGE__.txt?_rsc=Na3UOq7JT1wP04g3
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/banking-financial-services/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/__next.industries.__PAGE__.txt?_rsc=6VmNN6S55QlQNFTc
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 5 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/banking-financial-services/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/healthcare/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/banking-financial-services/__next.industries.$d$slug.__PAGE__.txt?_rsc=6q79LDISfDnJhufm
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 5 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/healthcare/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/government/
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /solutions/ai-automation/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/healthcare/__next.industries.$d$slug.__PAGE__.txt?_rsc=6q79LDISfDnJhufm
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 304 in 2 ms
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 6 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /solutions/ai-automation/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/government/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /solutions/ai-automation/__next.solutions.$d$slug.__PAGE__.txt?_rsc=i6Lg9_xrsewyJVEk
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/government/__next.industries.$d$slug.__PAGE__.txt?_rsc=6q79LDISfDnJhufm
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 7 ms
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/telecommunications/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/telecommunications/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/hospitality/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/telecommunications/__next.industries.$d$slug.__PAGE__.txt?_rsc=6q79LDISfDnJhufm
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 7 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/hospitality/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 2 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/hospitality/__next.industries.$d$slug.__PAGE__.txt?_rsc=6q79LDISfDnJhufm
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 7 ms
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/insurance/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/insurance/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 0 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/insurance/__next.industries.$d$slug.__PAGE__.txt?_rsc=6q79LDISfDnJhufm
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:04:59 am ::1 HEAD /industries/retail-real-estate/
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/retail-real-estate/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:04:59 am ::1 GET /industries/retail-real-estate/__next.industries.$d$slug.__PAGE__.txt?_rsc=6q79LDISfDnJhufm
+ HTTP  12/11/2026 11:04:59 am ::1 Returned 200 in 4 ms
+ HTTP  12/11/2026 11:05:01 am ::1 HEAD /privacy/
+ HTTP  12/11/2026 11:05:01 am ::1 Returned 200 in 3 ms
+ HTTP  12/11/2026 11:05:01 am ::1 GET /privacy/__next._tree.txt?_rsc=h1ykPaDHRuuEkyWI
+ HTTP  12/11/2026 11:05:01 am ::1 Returned 200 in 1 ms
+ HTTP  12/11/2026 11:05:01 am ::1 GET /privacy/__next.privacy.__PAGE__.txt?_rsc=H9Lz_zo1mGySMwGn
+ HTTP  12/11/2026 11:05:01 am ::1 Returned 200 in 7 ms
